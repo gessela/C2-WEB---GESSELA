@@ -1,0 +1,102 @@
+/* Reset básico para remover margens e padding padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  /* font-family: 'Press Start 2P', cursive; */
+  /* Fonte estilo arcade */
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  /* Fundo preto para um estilo arcade */
+  /* color: white; */
+}
+
+html {
+  border: 5px solid yellow;
+  height: 100%;
+}
+
+#hearts span {
+  font-size: 3rem;
+  color: rgb(255, 0, 200);
+}
+
+#colorInput {
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid yellow;
+  background: rgba(0, 0, 0, 0.274);  
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff00ff;
+  /* Cor vibrante */
+  border: 3px solid yellow;
+  /* Borda destacada */
+  color: white;
+  font-size: 1rem;
+  text-shadow: 2px 2px 0px #000;
+  /* Sombra para efeito 3D */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9800ff;
+  /* Mudança de cor ao passar o mouse */
+  border-color:yellow;
+}
+
+#hintButton {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+#hintBox {
+  position: absolute;
+  right: 70px;
+  bottom: 70px;
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  border: 2px solid yellow;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+#congratsMessage {
+  color: green;
+  margin: 20px 0;
+}
+
+#restartButton {
+  display: none;
+  position: absolute;
+  /* Posicionamento absoluto */
+  right: 90px;
+  /* À direita com margem de 20px */
+  bottom: 20px;
+  /* Margem inferior de 20px */
+}
+
+#userInterface {
+  display: flex;
+  /* Flexbox para centralizar os elementos */
+  flex-direction: column;
+  /* Coluna */
+  align-items: center;
+  /* Centralizado horizontalmente */
+  justify-content: center;
+  /* Centralizado verticalmente */
+}
